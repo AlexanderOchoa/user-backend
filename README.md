@@ -31,7 +31,7 @@ http://localhost:8080/v1/users/login
 http://localhost:8080/swagger-ui.html
 
 # Test REST API
-Use resources/challenge-backend.postman_collection.json
+Use resources/user-backend.postman_collection.json
 
 # Licence
 Alexander Ochoa - https://github.com/AlexanderOchoa
