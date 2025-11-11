@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "6eaa5fde-875b-4c40-a20d-3b0cb6eae464",
+		"name": "user-backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1483689",
+		"_collection_link": "https://crimson-shadow-635086.postman.co/workspace/HospitalCayetano-Develop~73aec996-7684-4228-9707-7a2f46e880bb/collection/1483689-6eaa5fde-875b-4c40-a20d-3b0cb6eae464?action=share&source=collection_link&creator=1483689"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alexander\",\r\n    \"email\": \"alexande@gmail.com\",\r\n    \"password\": \"Alexander211#\",\r\n    \"phones\": [\r\n        {\r\n            \"number\": \"992731476\",\r\n            \"citycode\": \"01\",\r\n            \"contrycode\": \"51\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"alexande@gmail.com\",\r\n    \"password\": \"Alexander211#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
